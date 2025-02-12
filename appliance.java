@@ -27,7 +27,7 @@ class Fan extends Appliance{
 class Ligtht extends Appliance{
   public double brightness;
   public String colorTemperature;
-  public Fan(boolean power,double brightness,String colorTemperature){
+  public Light(boolean power,double brightness,String colorTemperature){
     if(power){
       on();
     }else{
@@ -43,7 +43,7 @@ class Ligtht extends Appliance{
 class AC extends Appliance{
   public double temperature;
   public String mode;
-  public Fan(boolean power,double temperature,String mode){
+  public AC(boolean power,double temperature,String mode){
     if(power){
       on();
     }else{
@@ -55,8 +55,50 @@ class AC extends Appliance{
   }
 }
 //tv
+class TV extends Appliance{
+  public int volume;
+  public TV(boolean power,int volume){
+    if(power){
+      on();
+    }else{
+      off();
+    }
+
+    this.volume = volume;
+  }
+}
 //iron
+class Iron extends Appliance{
+  public double temperature;
+  public Iron(boolean power){
+    if(power){
+      on();
+    }else{
+      off();
+    }
+  }
+  this.temperature = temperature;
+}
+
 //printer
+class Printer extends Appliance{
+  public Printer(boolean power){
+    if(power){
+      on();
+    }else{
+      off();
+    }
+  }
+}
 //comp
+class Computer extends Appliance{
+  public Computer(boolean power){
+    if(power){
+      on();
+    }else{
+      off();
+    }
+  }
+}
   
   
