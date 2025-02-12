@@ -3,7 +3,7 @@ package project
 class WaterPurifier extends Appliance{
     String water_quality = "medium";
     boolean replacement_status = "false"; 
-    WaterPurifier(boolean power,String quality, boolean Replacement_status){
+    public WaterPurifier(boolean power,String quality, boolean Replacement_status){
       if(power){
         on();
       }else{
@@ -30,7 +30,7 @@ class Mircowave extends Appliance{
     String PowerLevel;
     int cooking_time;
     String Mode;
-    Microwave(boolean power, String powerlvl, int cooking_time, String mode){
+    public Microwave(boolean power, String powerlvl, int cooking_time, String mode){
         if(power){
             on();
           }else{
