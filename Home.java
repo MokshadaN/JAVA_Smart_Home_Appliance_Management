@@ -5,7 +5,8 @@ class HOME{
   }
 }
 
-class Bedroom{
+class Hall extend HOME{
+  
   
 }
 
