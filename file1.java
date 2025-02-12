@@ -2,8 +2,8 @@ package project
 
 class WaterPurifier extends Appliance{
     String water_quality = "medium";
-    String replacement_status = "NO"; 
-    WaterPurifier(boolean power,String quality, String Replacement_status){
+    boolean replacement_status = "false"; 
+    WaterPurifier(boolean power,String quality, boolean Replacement_status){
       if(power){
         on();
       }else{
@@ -16,7 +16,11 @@ class WaterPurifier extends Appliance{
     public String CheckWaterQuality(){
       return this.water_quality;
     }
-    public String FilterStatus(){
+    public boolean FilterStatus(){
       return this.replacement_status;
+    }
+    public void replacefilter(){
+        this.replacement_status = "true";
+        return;
     }
 }
