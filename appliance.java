@@ -1,3 +1,5 @@
+package project
+  
 class Appliance{
   public boolean power = false;
   public void on(){
