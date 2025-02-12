@@ -1,3 +1,4 @@
+package project
 class HOME{
   String name;
   HOME(String name_val){
@@ -6,8 +7,7 @@ class HOME{
 }
 
 class Hall extend HOME{
-  
-  
+    
 }
 
 public class HOME{
