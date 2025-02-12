@@ -24,3 +24,30 @@ class WaterPurifier extends Appliance{
         return;
     }
 }
+
+
+class Mircowave extends Appliance{
+    String PowerLevel;
+    int cooking_time;
+    String Mode;
+    Microwave(boolean power, String powerlvl, int cooking_time, String mode){
+        if(power){
+            on();
+          }else{
+            off();
+          }
+        this.PowerLevel = powerlvl;
+        this.cooking_time = cooking_time;
+        this.Mode = mode;
+    }
+    public void SetPowerLevel(String level){
+        this.PowerLevel = level;
+        return;
+    }
+    public void SetCookingTime(int minutes){
+        this.cooking_time = minutes;
+    }
+    public void setMode(String mode){
+        this.Mode = mode;
+    }    
+}
