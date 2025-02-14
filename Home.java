@@ -7,7 +7,11 @@ class HOME{
 }
 
 class Hall extend HOME{
-    
+    Light hall_light_1 = new Light(false,93.2,"cool white");
+    Fan hall_fan = new Fan(false,1);
+    AC hall_ac = new AC(false,18,"cool");
+    TV hall_tv = new TV(false,33);
+  
 }
 
 public class HOME{
