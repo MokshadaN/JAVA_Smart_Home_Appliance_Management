@@ -51,3 +51,24 @@ class Mircowave extends Appliance{
         this.Mode = mode;
     }    
 }
+
+
+class VacuumCleaner extends Appliance{
+    String cleaning_mode;
+    int battery_status;
+    public VacuumCleaner(boolean power, String clean_mode, int bat){
+        if(power){
+            on();
+          }else{
+            off();
+          }
+        this.cleaning_mode = clean_mode;
+        this.battery_status = bat;
+    }
+    public void setCleaningMode(String mode){
+        this.cleaning_mode = mode
+    }
+    public int checkBatteryStatus(){
+        return this.battery_status
+    }
+}
