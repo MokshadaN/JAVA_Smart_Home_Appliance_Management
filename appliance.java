@@ -70,7 +70,7 @@ class TV extends Appliance{
 //iron
 class Iron extends Appliance{
   public double temperature;
-  public Iron(boolean power){
+  public Iron(boolean power,double temperature){
     if(power){
       on();
     }else{
@@ -100,5 +100,19 @@ class Computer extends Appliance{
     }
   }
 }
-  
+//speaker
+class Speaker extends Appliance{
+  public Speaker(boolean power,int volume){
+
+    public int volume;
+    if(power){
+      on();
+    }else{
+      off();
+    }
+
+    this.volume = volume;
+  }
+}
+
   
