@@ -100,9 +100,8 @@ class Computer extends Appliance{
 }
 //speaker
 class Speaker extends Appliance{
+  public int volume;
   public Speaker(boolean power,int volume){
-
-    public int volume;
     if(power){
       on();
     }else{
@@ -162,7 +161,7 @@ class WaterPurifier extends Appliance{
 }
 
 
-class Mircowave extends Appliance{
+class Microwave extends Appliance{
     String PowerLevel;
     int cooking_time;
     String Mode;
