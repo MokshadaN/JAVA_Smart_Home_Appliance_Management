@@ -214,7 +214,7 @@ class Appliance{
         this.light_status=false;
       }
   }
-  
+
   
   class MyHome{
     String name;
@@ -239,9 +239,9 @@ class Appliance{
           System.out.println(hall_tv.volume);
   
       }
-  }
+  } 
   
-  public class HOME{
+  public class Home{
     public static void main(String[] args){
       Hall hall = new Hall("MyHome");
       hall.display();
