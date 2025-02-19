@@ -134,3 +134,23 @@ class Fridge extends Appliance{
     }
     
 }
+
+
+class Kitchen extends MyHome{
+    Microwave microwave_1 = new Microwave(false, "Low", 40, "Convection");
+    Dishwasher dishwasher_1 = new Dishwasher(false,"normal","cold");
+    Mixer mixer_1 = new Mixer(false, "LOW");
+    WaterPurifier RO = new  WaterPurifier(false, "medium",false);
+    Chimney chimney = new Chimney(false,"low",false);
+    Light kitchen_light = new Light(false,95,"cool white");
+    Fan kitchen_exhaust_fan = new Fan(false,1);
+    Fridge fridge = new Fridge(true,"medium","low");
+    
+    Kitchen(String name_val){
+        super(name_val);
+    }
+    public void display(){
+        
+    }
+    
+}
