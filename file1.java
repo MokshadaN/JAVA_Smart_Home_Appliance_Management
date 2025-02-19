@@ -72,3 +72,42 @@ class VacuumCleaner extends Appliance{
         return this.battery_status
     }
 }
+
+
+
+class Dishwasher extends Appliance{
+    String Washcycle;
+    String Watertemp;
+    Dishwasher(boolean power, String Washcycle, String temp){
+        if(power){
+            on();
+        }
+        else{
+            off();
+        }
+        this.Washcycle = Washcycle;
+        this.Watertemp = temp;
+    }
+    public void setWashCycle(String cycle){
+        this.Washcycle = cycle;
+    }
+    public void setWaterTemperature(String Temp){
+        this.Watertemp = Temp;
+    }
+}
+
+class Mixer extends Appliance{
+    String speed;
+    Mixer(boolean power, String speed){
+        if(power){
+            on();
+        }
+        else{
+            off();
+        }
+        this.speed= speed;
+    }
+    public void setSpeed(String speed_val){
+        this.speed = speed_val;
+    }
+}
