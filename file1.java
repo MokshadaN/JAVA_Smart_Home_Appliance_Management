@@ -111,3 +111,26 @@ class Mixer extends Appliance{
         this.speed = speed_val;
     }
 }
+
+class Fridge extends Appliance{
+    String temperature;
+    String freezer_temp;
+    Fridge(boolean power, String temp_val, String freezer){
+        
+        if(power){
+            on();
+        }
+        else{
+            off();
+        }
+        this.temperature = temp;
+        this.freezer_temp = freezer;
+    }
+    public void setTemperature(String temp){
+        this.temperature = temp;
+    }
+    public void setFreezerTemperature(String temp){
+        this.freezer_temp = temp;
+    }
+    
+}
