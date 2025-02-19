@@ -11,16 +11,16 @@ class Chimney extends Appliance{
     }
 
     this.speed = "low";
-    this. light_status= " false";
+    this. light_status= false;
   }
   public void setFanSpeed(String speed){
     this.speed =speed;
   }
    public void turnOnLight(boolean light_status){
-    this.light_status="true";
+    this.light_status=true;
   }
     public void turnOffLight(boolean light_status){
-    this.light_status="false";
+    this.light_status=false;
   }
 }
 
