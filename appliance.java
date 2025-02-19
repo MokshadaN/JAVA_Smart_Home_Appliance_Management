@@ -24,7 +24,7 @@ class Fan extends Appliance{
 }
 
 //light
-class Ligtht extends Appliance{
+class Light extends Appliance{
   public double brightness;
   public String colorTemperature;
   public Light(boolean power,double brightness,String colorTemperature){
@@ -115,6 +115,29 @@ class Speaker extends Appliance{
   }
 }
 
+class Chimney extends Appliance{
+  String speed;
+  boolean light_status;
+  public Chimney(boolean power, String speed, boolean light_status){
+    if(power){
+      on();
+    }else{
+      off();
+    }
+
+    this.speed = "low";
+    this. light_status= " false";
+  }
+  public void setFanSpeed(String speed){
+    this.speed =speed;
+  }
+   public void turnOnLight(boolean light_status){
+    this.light_status="true";
+  }
+    public void turnOffLight(boolean light_status){
+    this.light_status="false";
+  }
+}
 class WaterPurifier extends Appliance{
     String water_quality = "medium";
     boolean replacement_status = "false"; 
