@@ -1,1 +1,0 @@
-# JAVA_Smart_Home_Appliance_Management
